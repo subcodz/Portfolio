@@ -4,9 +4,9 @@ import { Link } from "react-router-dom"
 function Navbar(){
     return(
         <nav className=" 
-        backdrop-blur-[25px] 
-        hidden
-        sm:flex justify-center
+        backdrop-blur-[20px] 
+        
+        flex justify-center
         z-50 
         border-1
         border-gray-700 
