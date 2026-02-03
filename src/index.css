@@ -1,0 +1,170 @@
+
+html, body {
+  overflow-x: hidden;
+  
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: black;
+  --font-revive: "MyCustomFont", sans-serif;
+  --font-parafont: "mono", sans-serif;
+  --font-parafont2: "text_font", sans-serif;
+  --font-wide: "wide", sans-serif;
+  --font-hidrom: "hidrom", sans-serif;
+  --font-sunny: "sunny", sans-serif;
+  --font-condenso: "condenso", sans-serif;
+  --font-humane: "humane", sans-serif;
+  --font-boldonse: "boldonse", sans-serif;
+  --font-kimotto: "kimotto", sans-serif;
+  --font-bbh: "bbh", sans-serif;
+  --font-doto: "doto", sans-serif;
+  --font-orion: "orion", sans-serif;
+  --font-ferrite: "ferrite", sans-serif;
+  --font-goth: "Goth", sans-serif;
+  --font-skywall: "skywall", sans-serif;
+  --font-floripa: "floripa", sans-serif;
+}
+
+/* Set global site background */
+body {
+  @apply bg-primary;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../src/assets/fonts/revive.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mono';
+  src: url('../src/assets/fonts/Dongle-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'text_font';
+  src: url('../src/assets/fonts/Dongle-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'wide';
+  src: url('../src/assets/fonts/wide2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hidrom';
+  src: url('../src/assets/fonts/HIDROM.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sunny';
+  src: url('../src/assets/fonts/sunny.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'condenso';
+  src: url('../src/assets/fonts/Condenso.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'humane';
+  src: url('../src/assets/fonts/Humane-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'boldonse';
+  src: url('../src/assets/fonts/Boldonse-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'kimotto';
+  src: url('../src/assets/fonts/Kimotto.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bbh';
+  src: url('../src/assets/fonts/bbh.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'doto';
+  src: url('../src/assets/fonts/doto2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'orion';
+  src: url('../src/assets/fonts/Orion.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ferrite';
+  src: url('../src/assets/fonts/Ferrite.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Goth';
+  src: url('../src/assets/fonts/Gothspecial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'skywall';
+  src: url('../src/assets/fonts/Skywall.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'floripa';
+  src: url('../src/assets/fonts/Floripa.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
