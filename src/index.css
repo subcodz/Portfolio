@@ -24,7 +24,7 @@ body {
 @theme {
   --color-primary: black;
   --font-revive: "MyCustomFont", sans-serif;
-  --font-parafont: "mono", sans-serif;
+  --font-parafont: "para", sans-serif;
   --font-parafont2: "text_font", sans-serif;
   --font-wide: "wide", sans-serif;
   --font-hidrom: "hidrom", sans-serif;
@@ -54,9 +54,9 @@ body {
   font-style: normal;
 }
 @font-face {
-  font-family: 'mono';
-  src: url('../src/assets/fonts/Dongle-regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'para';
+  src: url('../src/assets/fonts/Dongle-Regular.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
