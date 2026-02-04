@@ -8,8 +8,8 @@ export default function About() {
     
     return (
         <div className=" w-full min-h-screen gap-5 flex select-none justify-center relative pt-25 pb-25">
-            <div className="sm:grid sm:grid-cols-[1fr_0.6fr] gap-3 w-79 sm:w-fit">    
-                <div className="grid sm:grid-rows-[0.5fr] gap-3">    
+            <div className="sm:grid sm:grid-cols-[0.8fr_0.6fr] gap-3 w-79 sm:w-fit">    
+                <div className="grid sm:grid-rows-[0.5fr_0.2fr] gap-3">    
                     <div
                         className="
                             px-6 flex flex-col

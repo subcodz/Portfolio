@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import FlippingWords from "../components/flipword";
 
 export default function Hero() {
   const lettersRef = useRef([]);
@@ -78,6 +79,8 @@ export default function Hero() {
                             Given below are some of my tech skills and how I have used
                             them in various projects.
       </p>
+
+      <FlippingWords/>
 
     </section>
   );

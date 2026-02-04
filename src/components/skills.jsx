@@ -24,6 +24,7 @@ export default function Skills(){
 
                   <SkillSection title="Languages" label="language" />
                   
+                  
               </div>
             </div>
         </div>
@@ -33,12 +34,12 @@ export default function Skills(){
 
 function SkillSection({ title, label }) {
   return (
-    <div className="border-2 rounded-[8px] bg-gray-800 border-gray-800 p-4">
+    <div className=" rounded-[12px] bg-gray-900 border-1 border-gray-700 p-4 hover:-translate-y-1 transition-all duration-200">
       <h2 className="text-white font-wide text-[12px] mb-3">
         {title}
       </h2>
 
-      <div className="grid grid-cols-5">
+      <div className="flex flex-wrap gap-1">
         {icons
           .filter(i => i.label === label)
           .map((i, idx) => {
@@ -48,31 +49,29 @@ function SkillSection({ title, label }) {
               <div
                 key={idx}
                 className="
-                  flex flex-col items-center gap-0
-                  
+                  flex flex-col 
+                  gap-2
                 "
               >
                 <div
                   className="
-                    w-10 h-10
-                    flex items-center justify-center
-                    rounded-md
+                    flex
+                    items-center
+                    h-7
+                    rounded-[20px]
                     bg-white/10
                     hover:bg-white/20
-                    
-                    hover:-translate-y-1
+                    px-2 font-parafont text-[24px]
                     hover:shadow-lg
+                    gap-2 text-gray-200
+                    hover:-translate-y-1
                     transition-all duration-200
                   "
                 >
-                  {Icon ? (
-                    <img src={i.icon} className="w-6 h-6 object-contain" />
-                  ) : (
-                    <span className="opacity-40">?</span>
-                  )}
+                  {i.name}
+                  
                 </div>
                 
-                {/* <span>{i.name}</span> */}
                 
               </div>
             );
