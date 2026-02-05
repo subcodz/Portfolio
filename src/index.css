@@ -40,6 +40,7 @@ body {
   --font-goth: "Goth", sans-serif;
   --font-skywall: "skywall", sans-serif;
   --font-floripa: "floripa", sans-serif;
+  --font-donglelight: "donglelight", sans-serif;
 }
 
 /* Set global site background */
@@ -155,7 +156,11 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'donglelight';
+  src: url('../src/assets/fonts/Dongle-Light.ttf') format('opentype');
+  
+}
 @keyframes marquee {
   0% {
     transform: translateX(0%);

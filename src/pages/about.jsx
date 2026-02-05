@@ -7,9 +7,9 @@ import Skills from "../components/skills";
 export default function About() {
     
     return (
-        <div className=" w-full min-h-screen gap-5 flex select-none justify-center relative pt-25 pb-25">
-            <div className="sm:grid sm:grid-cols-[0.8fr_0.6fr] gap-3 w-79 sm:w-fit">    
-                <div className="grid sm:grid-rows-[0.5fr_0.2fr] gap-3">    
+        <div className=" w-full gap-5 flex select-none justify-center relative pt-25 pb-25">
+            <div className="sm:grid sm:grid-cols-[0.9fr_0.7fr] items-start gap-4 w-79 sm:w-fit">    
+                <div className="grid sm:auto-rows-auto gap-4">    
                     <div
                         className="
                             px-6 flex flex-col
@@ -31,7 +31,7 @@ export default function About() {
                             className="
                                 text-gray-200 text-[23px] md:text-[23px]
                                 pt-5  max-w-[55ch] text-left
-                                font-parafont leading-[0.8]
+                                font-donglelight leading-[0.8]
                             "
                         >
                             Hi, I'm Subhajit, a BTech CSE undergrad (engineering), love
@@ -53,7 +53,7 @@ export default function About() {
                     ">
                         <h1 className="text-2xl font-wide text-white">TIMELINE</h1>
                     </div>
-                    <div className="text-[20px] font-wide
+                    {/*<div className="text-[20px] font-wide
                                      text-white border-1 
                                      sm:border-2 border-red-700 
                                      backdrop-blur-sm 
@@ -64,7 +64,7 @@ export default function About() {
                             <p>DEV-React</p>
                         
                         </div>
-                    </div>
+                    </div>*/}
                 </div>
                 <div className="sm:my-0 my-3">
                     <Skills/>

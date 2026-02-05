@@ -23,7 +23,7 @@ export default function Skills(){
                   <SkillSection title="Backend" label="backend" />
 
                   <SkillSection title="Languages" label="language" />
-                  
+
                   
               </div>
             </div>
@@ -34,7 +34,7 @@ export default function Skills(){
 
 function SkillSection({ title, label }) {
   return (
-    <div className=" rounded-[12px] bg-gray-900 border-1 border-gray-700 p-4 hover:-translate-y-1 transition-all duration-200">
+    <div className=" rounded-[12px] bg-transparent border-1 border-gray-700 p-4 hover:-translate-y-1 transition-all duration-200 hover:bg-blue-800 ">
       <h2 className="text-white font-wide text-[12px] mb-3">
         {title}
       </h2>
@@ -59,9 +59,10 @@ function SkillSection({ title, label }) {
                     items-center
                     h-7
                     rounded-[20px]
-                    bg-white/10
-                    hover:bg-white/20
-                    px-2 font-parafont text-[24px]
+                    border-1 border-gray-700
+                    bg-gray-800
+                    hover:border-white/60 hover:bg-transparent
+                    px-2 font-donglelight text-[22px]
                     hover:shadow-lg
                     gap-2 text-gray-200
                     hover:-translate-y-1

@@ -69,7 +69,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      <p className="font-parafont leading-4 sm:leading-5 text-gray-300 text-center text-[21px] sm:text-[22px] w-[350px] sm:w-[650px] select-none">
+      <p className="font-donglelight leading-4 sm:leading-5 text-gray-300 text-center text-[23px] sm:text-[22px] w-[350px] sm:w-[650px] select-none">
         
          Hi, I'm Subhajit, a BTech CSE undergrad (engineering), love
                             for technology and the process of developing and exploring

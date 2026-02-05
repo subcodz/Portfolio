@@ -21,13 +21,15 @@ export const projectdata = [
 ]
 
 export const icons = [
-    { name: "React", icon: reactIcon, label:"frontend"},
-    { name: "Python", icon: pythonIcon, label:"language"},
-    { name: "Git", icon: gitIcon, label:"language"},
-    { name: "Nextjs", icon: "", label:"frontend" },
-    { name: "js", icon: jsIcon, label:"language" },
-    { name: "springboot", icon: "", label:"backend" },
-    { name: "Tailwind", icon: tailwindIcon, label:"frontend" },
+    { name: "React", label:"frontend"},
+    { name: "Python", label:"language"},
+    { name: "Git", label:"language"},
+    { name: "Nextjs", label:"frontend" },
+    { name: "js", label:"language" },
+    { name: "springboot", label:"backend" },
+    { name: "Tailwind", label:"frontend" },
+    { name: "Java", label: "language"},
+    { name: "Nodejs", label: "backend"}
 ];
 
 export const social = [
