@@ -21,11 +21,12 @@ export const projectdata = [
 ]
 
 export const icons = [
-    { name: "React", label:"frontend"},
+    { name: "Reactjs", label:"frontend"},
     { name: "Python", label:"language"},
     { name: "Git", label:"language"},
+    { name: "Javascript", label:"language"},
     { name: "Nextjs", label:"frontend" },
-    { name: "js", label:"language" },
+    { name: "C++", label:"language" },
     { name: "springboot", label:"backend" },
     { name: "Tailwind", label:"frontend" },
     { name: "Java", label: "language"},
@@ -37,4 +38,20 @@ export const social = [
         { name: "github", icon: gitIcon, link:"https://github.com/subcodz"},
         { name: "mail", icon: gitIcon, link:"mailto:subs88badd@gmail.com"},
         
+];
+
+export const milestones = [
+    {
+        title: "College started: SEP 2025",
+        details: "B.Tech CSE undergrad",
+    },
+    {
+        title: "First Semester",
+        details: "Learnt some frontend skills with react, learnt DSA with mostly easy to medium level leetcode questions mainly till trees, Proficiency: MID",
+    },
+    {
+        title: "College ends: 2029",
+        details: "B.Tech CSE undergrad",
+    },
+    
 ];

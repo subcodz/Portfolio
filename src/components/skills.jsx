@@ -16,7 +16,7 @@ export default function Skills(){
             SKILLS
             </h1>
             <div className="">
-              <div className="grid grid-rows-3 gap-2">
+              <div className="grid auto-rows-auto items-start gap-2">
 
                   <SkillSection title="Frontend" label="frontend" />
 

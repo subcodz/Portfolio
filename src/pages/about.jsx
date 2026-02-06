@@ -2,13 +2,14 @@ import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
 import { icons } from "../components/constants";
 import Skills from "../components/skills";
+import Timeline from "../components/timeline";
 
 
 export default function About() {
     
     return (
-        <div className=" w-full gap-5 flex select-none justify-center relative pt-25 pb-25">
-            <div className="sm:grid sm:grid-cols-[0.9fr_0.7fr] items-start gap-4 w-79 sm:w-fit">    
+        <div className=" w-full gap-5 flex select-none justify-center  pt-25 pb-25">
+            <div className="sm:grid sm:grid-cols-[0.9fr_0.7fr_0.6fr] items-start gap-4 w-79 sm:w-fit">    
                 <div className="grid sm:auto-rows-auto gap-4">    
                     <div
                         className="
@@ -51,7 +52,7 @@ export default function About() {
                             rounded-[25px]
                             border-1 sm:border-2 border-red-700
                     ">
-                        <h1 className="text-2xl font-wide text-white">TIMELINE</h1>
+                        <h1 className="text-2xl font-wide text-white">others</h1>
                     </div>
                     {/*<div className="text-[20px] font-wide
                                      text-white border-1 
@@ -69,7 +70,9 @@ export default function About() {
                 <div className="sm:my-0 my-3">
                     <Skills/>
                 </div>
+                <div className="sm:grid sm:auto-rows-auto-auto"><Timeline/></div>
             </div>
+            
         </div>
     );
 }
