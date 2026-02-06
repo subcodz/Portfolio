@@ -43,7 +43,7 @@ export default function Timeline() {
             className="absolute mt-5 w-[2px] bg-gradient-to-b from-red-700 to-blue-800 rounded-[25px] transition-all duration-300"
             style={{ 
               height: `${lineHeight}px`,
-              left: '9px',
+              left: '7px',
               
             }}
           />
@@ -59,14 +59,14 @@ export default function Timeline() {
             >
               {/* Dot */}
               <span
-                className={`timeline-dot mt-2 h-5 w-5 rounded-full shrink-0 transition-colors duration-300 ${
+                className={`timeline-dot mt-2 h-4 w-4 rounded-full shrink-0 transition-colors duration-300 ${
                   activeIndex === index ? "bg-red-500" : "bg-blue-600"
                 }`}
               />
 
               {/* Content */}
               <div className="flex flex-col">
-                <div className="border-1 rounded-[12px] border-gray-600 p-3">
+                <div className="border-1 rounded-[12px] border-gray-600 p-3 hover:border-gray-400">
                   <h1 className="text-gray-300 font-parafont text-[24px] cursor-pointer">
                     {item.title}
                   </h1>

@@ -34,7 +34,7 @@ export default function Skills(){
 
 function SkillSection({ title, label }) {
   return (
-    <div className=" rounded-[12px] bg-transparent border-1 border-gray-700 p-4 hover:-translate-y-1 transition-all duration-200 hover:bg-blue-800 ">
+    <div className=" rounded-[12px] bg-transparent border-1 border-gray-700 p-4 hover:-translate-y-1 transition-all duration-200 hover:border-gray-400 hover:bg-blue-800 ">
       <h2 className="text-white font-wide text-[12px] mb-3">
         {title}
       </h2>
@@ -43,8 +43,7 @@ function SkillSection({ title, label }) {
         {icons
           .filter(i => i.label === label)
           .map((i, idx) => {
-            const Icon = i.icon;
-
+          
             return (
               <div
                 key={idx}

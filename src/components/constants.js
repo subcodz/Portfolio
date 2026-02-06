@@ -30,7 +30,9 @@ export const icons = [
     { name: "springboot", label:"backend" },
     { name: "Tailwind", label:"frontend" },
     { name: "Java", label: "language"},
-    { name: "Nodejs", label: "backend"}
+    { name: "Nodejs", label: "backend"},
+    { name: "SQL", label: "language"},
+    { name: "PostgreSQL", label:"backend" }
 ];
 
 export const social = [
@@ -54,4 +56,11 @@ export const milestones = [
         details: "B.Tech CSE undergrad",
     },
     
+];
+
+export const others = [
+    {name: "System design"},
+    {name: "HLD"},
+    {name: "LLD"},
+    {name: "Architecture"}
 ];
