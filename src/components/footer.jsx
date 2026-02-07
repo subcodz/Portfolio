@@ -25,11 +25,13 @@ export default function Footer() {
             flex justify-center 
             leading-none 
             p-3
+            brightness-90
             text-transparent
-            bg-[url(/text_bg.jpg)]
+            bg-[url(/text_bg5.png)]
             bg-cover
             bg-center
-            bg-clip-text "
+            bg-clip-text 
+            sm:[-webkit-text-stroke:2px_rgb(106,90,205)]"
       >
         SUBHAJIT
       </h1>
