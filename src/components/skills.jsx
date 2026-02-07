@@ -1,9 +1,9 @@
-import { icons } from "./constants"
+import { icons } from "./constants";
 
-export default function Skills(){
-    return(
-        <div
-        className="
+export default function Skills() {
+  return (
+    <div
+      className="
         p-5 flex flex-col
         backdrop-blur-sm bg-black/50
         rounded-[25px]
@@ -11,39 +11,30 @@ export default function Skills(){
         min-h-[260px]
 
         "
-        >
-            <h1 className="text-white font-wide text-[24px] mb-4">
-            SKILLS
-            </h1>
-            <div className="">
-              <div className="grid auto-rows-auto items-start gap-2">
+    >
+      <h1 className="text-white font-wide text-[24px] mb-4">SKILLS</h1>
+      <div className="">
+        <div className="grid auto-rows-auto items-start gap-2">
+          <SkillSection title="Frontend" label="frontend" />
 
-                  <SkillSection title="Frontend" label="frontend" />
+          <SkillSection title="Backend" label="backend" />
 
-                  <SkillSection title="Backend" label="backend" />
-
-                  <SkillSection title="Languages" label="language" />
-
-                  
-              </div>
-            </div>
+          <SkillSection title="Languages" label="language" />
         </div>
-    )
+      </div>
+    </div>
+  );
 }
-
 
 function SkillSection({ title, label }) {
   return (
     <div className=" rounded-[12px] bg-transparent border-1 border-gray-700 p-4 hover:-translate-y-1 transition-all duration-200 hover:border-gray-400 hover:bg-blue-800 ">
-      <h2 className="text-white font-wide text-[12px] mb-3">
-        {title}
-      </h2>
+      <h2 className="text-white font-wide text-[12px] mb-3">{title}</h2>
 
       <div className="flex flex-wrap gap-1">
         {icons
-          .filter(i => i.label === label)
+          .filter((i) => i.label === label)
           .map((i, idx) => {
-          
             return (
               <div
                 key={idx}
@@ -60,7 +51,7 @@ function SkillSection({ title, label }) {
                     rounded-[20px]
                     border-1 border-gray-700
                     bg-gray-800
-                    hover:border-white/60 hover:bg-transparent
+                    hover:none hover:bg-white hover:text-black
                     px-2 font-donglelight text-[22px]
                     hover:shadow-lg
                     gap-2 text-gray-200
@@ -69,10 +60,7 @@ function SkillSection({ title, label }) {
                   "
                 >
                   {i.name}
-                  
                 </div>
-                
-                
               </div>
             );
           })}

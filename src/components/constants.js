@@ -1,8 +1,4 @@
-import reactIcon from "../assets/react.svg";
-import pythonIcon from "../assets/python.svg";
 import gitIcon from "../assets/git.svg";
-import jsIcon from "../assets/js.svg";
-import tailwindIcon from "../assets/tailwind.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 
 export const Nav_links = [
@@ -11,7 +7,6 @@ export const Nav_links = [
     {target: "projects", label: "PROJECTS"},
     {target: "contacts", label: "CONTACTS"}
 ]
-
 
 export const projectdata = [
     { title: "Portfolio", state:"ongoing", heading:"Heading1",techstack: "React, Tailwind, GSAP", description: "This is the portfolio website, where I showcase my skills, project, my interests, on going plans and projects. I built this also to learn some frontend skills and to get started with projects." },

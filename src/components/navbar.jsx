@@ -1,9 +1,10 @@
-import { Nav_links } from "./constants"
-import { Link } from "react-router-dom"
+import { Nav_links } from "./constants";
+import { Link } from "react-router-dom";
 
-function Navbar(){
-    return(
-        <nav className=" 
+function Navbar() {
+  return (
+    <nav
+      className=" 
         backdrop-blur-[20px] 
         
         flex justify-center
@@ -16,9 +17,10 @@ function Navbar(){
         rounded-[30px] 
          fixed
         left-1/2 -translate-x-1/2
-        top-5 ">
-            
-            <div className="flex items-center 
+        top-5 "
+    >
+      <div
+        className="flex items-center 
           gap-35               
           text-gray-300 
           font-mono 
@@ -26,52 +28,59 @@ function Navbar(){
           /* Smooth scaling on all breakpoints */
           scale-90 sm:scale-95 md:scale-100 lg:scale-105 xl:scale-110 
           transition-transform duration-300
-            ">
-
-                <h2 className="
+            "
+      >
+        <h2
+          className="
                 
                 text-gray-300 
                 font-floripa text-xl 
                  
                 transition duration-300
-                hover:text-red-500 select-none ">SUBHAJIT</h2>
+                hover:text-red-500 select-none "
+        >
+          SUBHAJIT
+        </h2>
 
-                <div 
-                className="
+        <div
+          className="
                 hidden 
-                lg:flex gap-6
+                lg:flex gap-5
                 sm:text-lg 
                 md:text-1xl 
                 font-medium 
                 mt-1
                 font-parafont 
-                ">
-                    {Nav_links.map((link) => (
-                        <button key={link.target} 
-                        onClick={() => {
-                        document.getElementById(link.target)?.scrollIntoView({
-                            behavior: "smooth",
-                            block: "start",
-                            });
-                        }}
-                        className="transition-all
+                "
+        >
+          {Nav_links.map((link) => (
+            <button
+              key={link.target}
+              onClick={() => {
+                document.getElementById(link.target)?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+              className="transition-all
                          duration-250
                          text-1xl
                          select-none
                          hover:text-2xl
-                         hover:-translate-y-1
-                         active:translate-y-0
-                         hover:scale-90
                          hover:font-wide
-                         hover:text-red-500
-                         ">
-                            {link.label}
-                        </button>
-                ))}
-                </div>
-            </div>
-        </nav>
-    )
+                         hover:scale-75
+                         
+                         hover:text-black
+                         hover:bg-white hover:rounded-[25px] hover:px-3
+                         "
+            >
+              {link.label}
+            </button>
+          ))}
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

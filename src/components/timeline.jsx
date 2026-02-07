@@ -9,15 +9,21 @@ export default function Timeline() {
   useEffect(() => {
     const calculateLineHeight = () => {
       if (containerRef.current) {
-        const dots = containerRef.current.querySelectorAll('.timeline-dot');
+        const dots = containerRef.current.querySelectorAll(".timeline-dot");
         if (dots.length >= 2) {
           const firstDot = dots[0];
           const lastDot = dots[dots.length - 1];
-          
+
           const containerTop = containerRef.current.getBoundingClientRect().top;
-          const firstDotCenter = firstDot.getBoundingClientRect().top - containerTop + firstDot.offsetHeight / 2;
-          const lastDotCenter = lastDot.getBoundingClientRect().top - containerTop + lastDot.offsetHeight / 2;
-          
+          const firstDotCenter =
+            firstDot.getBoundingClientRect().top -
+            containerTop +
+            firstDot.offsetHeight / 2;
+          const lastDotCenter =
+            lastDot.getBoundingClientRect().top -
+            containerTop +
+            lastDot.offsetHeight / 2;
+
           setLineHeight(lastDotCenter - firstDotCenter);
         }
       }
@@ -25,10 +31,10 @@ export default function Timeline() {
 
     // Calculate immediately
     calculateLineHeight();
-    
+
     // Recalculate after a short delay to account for animations
     const timeout = setTimeout(calculateLineHeight, 350);
-    
+
     return () => clearTimeout(timeout);
   }, [activeIndex]);
 
@@ -41,10 +47,9 @@ export default function Timeline() {
         {lineHeight > 0 && (
           <div
             className="absolute mt-5 w-[2px] bg-gradient-to-b from-red-700 to-blue-800 rounded-[25px] transition-all duration-300"
-            style={{ 
+            style={{
               height: `${lineHeight}px`,
-              left: '7px',
-              
+              left: "7px",
             }}
           />
         )}
@@ -53,7 +58,7 @@ export default function Timeline() {
           {milestones.map((item, index) => (
             <div
               key={index}
-              className="relative flex gap-5"
+              className="relative flex gap-3"
               onMouseEnter={() => setActiveIndex(index)}
               onMouseLeave={() => setActiveIndex(null)}
             >
@@ -66,7 +71,7 @@ export default function Timeline() {
 
               {/* Content */}
               <div className="flex flex-col">
-                <div className="border-1 rounded-[12px] border-gray-600 p-3 hover:border-gray-400">
+                <div className="border-1 rounded-[12px] border-gray-600 p-2 hover:border-gray-400">
                   <h1 className="text-gray-300 font-parafont text-[24px] cursor-pointer">
                     {item.title}
                   </h1>
@@ -79,7 +84,7 @@ export default function Timeline() {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="mt-3 w-55 rounded-xl font-parafont2 leading-3 bg-white p-3 text-[23px] text-slate-700 shadow-xl">
+                  <div className="mt-3 w-55 rounded-xl font-parafont2 leading-3 bg-white p-3 text-[23px] text-black shadow-xl">
                     {item.details}
                   </div>
                 </div>
