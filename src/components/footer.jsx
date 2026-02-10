@@ -4,7 +4,7 @@ export default function Footer() {
       className="w-full 
         rounded-tl-[50px] 
         rounded-tr-[50px] 
-        flex flex-col 
+        flex flex-col
         select-none 
         backdrop-blur-[20px] bg-black/50 
         h-60
@@ -14,33 +14,28 @@ export default function Footer() {
         className="font-parafont 
             text-[20px] sm:text-2xl 
             flex justify-center 
-            mt-10 mb-[-25px] 
+            sm:pt-9 pt-5
             text-gray-300"
       >
         website built and designed by
       </p>
       <h1
-        className="text-[65px] sm:text-[250px] 
-            font-ferrite 
+        className="text-[110px] sm:text-[310px] 
+            font-hidrom
             flex justify-center 
             leading-none 
-            p-3
-            brightness-90
+            
+            brightness-80
             text-transparent
-            bg-[url(/text_bg5.png)]
-            bg-cover
-            bg-center
+            bg-[url(/text_bg.jpg)]
+            sm:bg-top bg-left
             bg-clip-text 
-            sm:[-webkit-text-stroke:2px_rgb(106,90,205)]"
+            "
       >
         SUBHAJIT
       </h1>
 
-      <div className=" ">
-        <p className="flex justify-center text-[23px] font-parafont text-white">
-          Links
-        </p>
-      </div>
+      <div className=" "></div>
     </div>
   );
 }

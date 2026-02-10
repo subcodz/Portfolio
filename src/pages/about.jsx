@@ -62,7 +62,12 @@ export default function About() {
                                     rounded-[20px]
                                     border-1 border-gray-700
                                     bg-gray-800
-                                    hover:none hover:bg-white hover:text-black
+                                    hover:none
+                                    
+                                    
+                                    
+                                    
+                                    hover:bg-white hover:text-black
                                     px-2 font-parafont text-[22px]
                                     hover:shadow-lg
                                     gap-2 text-gray-200

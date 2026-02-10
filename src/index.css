@@ -41,6 +41,7 @@ body {
   --font-skywall: "skywall", sans-serif;
   --font-floripa: "floripa", sans-serif;
   --font-donglelight: "donglelight", sans-serif;
+  --font-skybold: "skybold", sans-serif;
 }
 
 /* Set global site background */
@@ -158,7 +159,12 @@ body {
 }
 @font-face {
   font-family: 'donglelight';
-  src: url('../src/assets/fonts/Dongle-Light.ttf') format('opentype');
+  src: url('../src/assets/fonts/Dongle-Light.ttf') format('truetype');
+  
+}
+@font-face {
+  font-family: 'skybold';
+  src: url('../src/assets/fonts/SkyboldDemo.otf') format('opentype');
   
 }
 @keyframes marquee {

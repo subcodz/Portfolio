@@ -16,9 +16,9 @@ export default function Contact() {
     >
       <div
         className="text-[22px] font-parafont
-                            gap-5 flex 
-                            justify center 
-                            text-gray-300 "
+                  gap-5 flex 
+                  justify center 
+                text-gray-300 "
       >
         {social.map((i) => (
           <a
@@ -26,13 +26,13 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             className="transition-all
-                                                    duration-300 
-                                                    hover:px-3
-                                                    hover:font-orion
-                                                    hover:text-3xl
-                                                    active:translate-y-0
-                                                    hover:scale-90
-                                                    hover:bg-white hover:text-black  rounded-[25px]"
+            hover:px-3
+            duration-300 
+            hover:text-3xl
+            hover:font-orion
+            hover:scale-90
+            active:translate-y-0
+            hover:bg-white hover:text-black rounded-[25px]"
           >
             {i.name}
           </a>

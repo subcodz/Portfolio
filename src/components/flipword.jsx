@@ -4,9 +4,10 @@ const baseWords = [
   "System Design",
   "Backend",
   "Artificial Intelligence",
-  "Distributed Systems",
+  "Scaling",
   "APIs",
-  "Cloud Infrastructure",
+  "Data Structures",
+  "Algorithms",
 ];
 
 const words = [...baseWords, baseWords[0]];
@@ -30,7 +31,7 @@ export default function FlippingWords() {
   }, [index]);
 
   return (
-    <div className="inline-flex items-center h-14 overflow-hidden px-4 m-7 rounded-[40px] bg-transparent border-gray-600 shadow-sm">
+    <div className="inline-flex items-center h-14 overflow-hidden px-4 m-7 rounded-[40px] bg-transparent border-gray-600 ">
       <div
         className="flex flex-col transition-transform duration-700 ease-in-out"
         style={{ transform: `translateY(-${index * wordHeight}px)` }}
