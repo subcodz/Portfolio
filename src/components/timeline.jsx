@@ -46,7 +46,8 @@ export default function Timeline() {
         {/* Vertical line */}
         {lineHeight > 0 && (
           <div
-            className="absolute mt-5 w-[2px] bg-gradient-to-b from-red-700 to-blue-800 rounded-[25px] transition-all duration-300"
+            className="absolute mt-5 w-[2px] bg-gradient-to-b from-red-700 to-blue-800 
+                      rounded-[25px] transition-all duration-300"
             style={{
               height: `${lineHeight}px`,
               left: "7px",
@@ -84,7 +85,10 @@ export default function Timeline() {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="mt-3 w-55 rounded-xl font-parafont2 leading-3 bg-white p-3 text-[23px] text-black shadow-xl">
+                  <div
+                    className="mt-2 sm:w-55 w-65 rounded-xl font-parafont2 leading-3
+                                 bg-white p-3 text-[23px] text-black "
+                  >
                     {item.details}
                   </div>
                 </div>

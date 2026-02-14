@@ -7,14 +7,15 @@ import { others } from "../components/constants";
 export default function About() {
   return (
     <div className=" w-full gap-5 flex select-none justify-center  pt-25 pb-25">
-      <div className="sm:grid sm:grid-cols-[0.9fr_0.7fr_0.6fr] items-start gap-4 w-79 sm:w-fit">
+      <div className="lg:grid lg:grid-cols-[0.9fr_0.7fr_0.6fr] sm:grid-cols-2 grid grid-cols-1 items-start gap-4 w-86 sm:w-fit">
         <div className="grid sm:auto-rows-auto gap-4">
           <div
             className="
                             px-6 flex flex-col
                             backdrop-blur-sm bg-black/50
                             z-0 
-                            
+                            hover:scale-102
+                            transition-all duration-200
                             p-5
                             rounded-[25px]
                             border-1 sm:border-2       
@@ -42,7 +43,7 @@ export default function About() {
           <div
             className="
                             
-                            
+                            hover:scale-102 transition-all duration-200
                             backdrop-blur-sm bg-black/50 
                             p-5
                             rounded-[25px]
@@ -51,7 +52,7 @@ export default function About() {
           >
             <h1 className="text-2xl font-wide pb-5 text-white">others</h1>
 
-            <div className="flex flex-wrap gap-1">
+            <div className="flex flex-wrap gap-1 ">
               {others.map((item) => (
                 <div className="flex flex-col">
                   <div
@@ -62,17 +63,13 @@ export default function About() {
                                     rounded-[20px]
                                     border-1 border-gray-700
                                     bg-gray-800
-                                    hover:none
-                                    
-                                    
-                                    
-                                    
                                     hover:bg-white hover:text-black
                                     px-2 font-parafont text-[22px]
                                     hover:shadow-lg
                                     gap-2 text-gray-200
                                     hover:-translate-y-1
                                     transition-all duration-200
+                                    hover:shadow-lg/40 hover:shadow-yellow-400
                                 "
                   >
                     {item.name}

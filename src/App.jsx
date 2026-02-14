@@ -7,7 +7,7 @@ import Contact from "./components/contactbar";
 
 function App() {
   return (
-    <div className="relative overflow-x-hidden">
+    <div className="">
       <div className="fixed inset-0 -z-10 pointer-events-none">
         <video
           autoPlay
@@ -32,14 +32,14 @@ function App() {
 
           <section
             id="about"
-            className="w-full bg-blue-900/30 backdrop-blur-[40px] panel min-h-screen flex items-center justify-center px-5 relative"
+            className="w-full bg-blue-900/30  backdrop-blur-[40px] panel min-h-screen flex items-center p-5 sm:p-14 justify-center "
           >
             <About />
           </section>
 
           <section
             id="projects"
-            className="min-h-screen panel bg-violet-500/10 backdrop-blur-[40px] panel-projects items-center flex justify-center p-14 sm:p-14"
+            className="min-h-screen panel bg-violet-500/10 backdrop-blur-[40px] panel-projects items-center flex justify-center p-8 sm:p-14"
           >
             <Projects />
           </section>

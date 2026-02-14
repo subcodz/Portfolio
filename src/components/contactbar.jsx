@@ -6,13 +6,14 @@ export default function Contact() {
       className="p-1 px-5 
                         backdrop-blur-[15px] 
                         left-1/2 
-                        -translate-x-1/2 border-1
-                        border-gray-700 
+                        -translate-x-1/2 
                         bg-black/15 
                         rounded-[50px] 
-                        shadow-lg
+                        border-1 border-gray-700
                         bottom-8 z-50 
-                        fixed flex justify-center"
+                        fixed flex justify-center
+                        
+                        "
     >
       <div
         className="text-[22px] font-parafont

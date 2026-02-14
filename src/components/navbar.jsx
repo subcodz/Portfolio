@@ -12,7 +12,6 @@ function Navbar() {
         border-1
         border-gray-700 
         bg-black/15 
-        shadow-lg
         px-15 py-2 
         rounded-[30px] 
          fixed
