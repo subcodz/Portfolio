@@ -1,75 +1,84 @@
+import { useState } from "react";
 import { icons } from "./constants";
 
 export default function Skills() {
+  const [activeCategory, setActiveCategory] = useState(null);
+
+  const categories = [
+    { title: "Frontend", label: "frontend" },
+    { title: "Backend", label: "backend" },
+    { title: "Languages", label: "language" },
+  ];
+
   return (
     <div
       className="
         p-5 flex flex-col
-        backdrop-blur-sm bg-black/50
+        bg-black/25 backdrop-blur-3xl
         rounded-[25px]
-        border-1 sm:border-2 border-red-700
-        min-h-[260px]
-
-        "
+        border-1 border-gray-600
+        
+      "
     >
       <h1 className="text-white font-wide text-[24px] mb-4">SKILLS</h1>
-      <div className="">
-        <div className="grid auto-rows-auto items-start gap-2">
-          <SkillSection title="Frontend" label="frontend" />
 
-          <SkillSection title="Backend" label="backend" />
+      {/* Category Buttons */}
+      <div className="flex gap-1 mb-6">
+        {categories.map((cat) => {
+          const isActive = activeCategory === cat.label;
 
-          <SkillSection title="Languages" label="language" />
-        </div>
+          return (
+            <button
+              key={cat.label}
+              onClick={() => setActiveCategory(isActive ? null : cat.label)}
+              className={`
+                text-[22px] font-parafont px-3  rounded-full border
+                transition-all duration-200
+                ${
+                  isActive
+                    ? "bg-white text-black border-white"
+                    : "text-white border-gray-600 hover:text-black hover:bg-white"
+                }
+              `}
+            >
+              {cat.title}
+            </button>
+          );
+        })}
       </div>
-    </div>
-  );
-}
 
-function SkillSection({ title, label }) {
-  return (
-    <div
-      className=" rounded-[12px] bg-transparent border-1 border-gray-700 p-4 
-                    transition-all duration-200 
-                    hover:border-gray-400 hover:bg-blue-800 
-                    hover:shadow-lg/40 hover:shadow-blue-500 hover:scale-104 "
-    >
-      <h2 className="text-white font-wide text-[12px] mb-3">{title}</h2>
+      {/* All Skills */}
+      <div className="flex flex-wrap gap-2">
+        {icons.map((i, idx) => {
+          const isActive = activeCategory === i.label;
 
-      <div className="flex flex-wrap gap-1">
-        {icons
-          .filter((i) => i.label === label)
-          .map((i, idx) => {
-            return (
-              <div
-                key={idx}
-                className="
-                  flex flex-col 
-                  gap-2
-                "
-              >
-                <div
-                  className="
-                    flex
-                    items-center
-                    h-7
-                    rounded-[20px]
-                    border-1 border-gray-700
-                    bg-gray-800
-                     hover:bg-white hover:text-black
-                    px-2 font-donglelight text-[22px]
-                    
-                    gap-2 text-gray-200
-                    hover:-translate-y-1
-                    transition-all duration-200
-                    hover:shadow-lg/40 hover:shadow-yellow-300
-                  "
-                >
-                  {i.name}
-                </div>
+          return (
+            <div
+              key={idx}
+              className={`
+                flex items-center
+                h-auto
+                rounded-[20px]
+                border-1
+                px-2 gap-2
+                font-donglelight text-[20px]
+                transition-all duration-200
+                hover:-translate-y-1
+                hover:shadow-lg/40 hover:shadow-yellow-300
+                ${
+                  isActive
+                    ? "bg-white text-black font-parafont border-white  "
+                    : "bg-gray-800 text-white border-gray-700 hover:bg-white hover:text-black hover:font-parafont"
+                }
+              `}
+            >
+              <div className="h-[15px] w-[15px]">
+                <img src={i.imgsrc} alt={i.name} />
               </div>
-            );
-          })}
+              <div>{i.name}</div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -24,6 +24,7 @@ body {
 @theme {
   --color-primary: black;
   --font-revive: "MyCustomFont", sans-serif;
+  --font-gsans: "gsans", sans-serif;
   --font-parafont: "para", sans-serif;
   --font-parafont2: "para2", sans-serif;
   --font-wide: "wide", sans-serif;
@@ -59,6 +60,12 @@ body {
   font-family: 'para';
   src: url('../src/assets/fonts/Dongle-Regular.ttf') format('truetype');
   font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gsans';
+  src: url('../src/assets/fonts/gsansregular.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -184,4 +191,38 @@ body {
   .animate-marquee {
     animation: none;
   }
+}
+
+.hero-letter {
+  opacity: 0;
+  transform: translateY(40px) scale(0.9);
+  color: rgba(255, 255, 255, 0); /* start fully transparent */
+}
+
+.hero-letter.animate {
+  animation: riseUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes riseUp {
+  0% {
+    opacity: 0;
+    transform: translateY(120px) scale(0.9);
+    color: rgba(228, 222, 222, 0.34);
+  }
+  
+  60% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.03);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+    color: rgba(209, 213, 219, 1); /* Tailwind text-gray-300 */
+  }
+}
+
+@theme {
+  --inset-shadow-md: inset 0 10px 11px rgba(0, 0, 0, 0.25); 
 }

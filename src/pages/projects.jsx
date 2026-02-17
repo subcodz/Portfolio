@@ -3,7 +3,7 @@ import ProjectCard from "../components/projectcard";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center px-5">
       <h1 className="text-white text-[28px] sm:text-3xl  font-wide ">
         PROJECTS
       </h1>

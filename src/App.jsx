@@ -4,17 +4,18 @@ import Hero from "./pages/hero";
 import Footer from "./components/footer";
 import Projects from "./pages/projects";
 import Contact from "./components/contactbar";
+import Timeline from "./components/timeline";
 
 function App() {
   return (
-    <div className="">
+    <div>
       <div className="fixed inset-0 -z-10 pointer-events-none">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover brightness-50"
+          className="w-full h-full object-cover brightness-60"
         >
           <source src="/bg.mp4" type="video/mp4" />
         </video>
@@ -26,20 +27,19 @@ function App() {
         <Navbar />
 
         <main className="main-content">
-          <section id="home" className="min-h-screen ">
+          <section id="home" className="pt-20">
             <Hero />
           </section>
 
           <section
             id="about"
-            className="w-full bg-blue-900/30  backdrop-blur-[40px] panel min-h-screen flex items-center p-5 sm:p-14 justify-center "
+            className="w-full  panel  flex items-center pb-10 pt-10  justify-center "
           >
             <About />
           </section>
-
           <section
             id="projects"
-            className="min-h-screen panel bg-violet-500/10 backdrop-blur-[40px] panel-projects items-center flex justify-center p-8 sm:p-14"
+            className="panel panel-projects items-center flex justify-center pb-10 "
           >
             <Projects />
           </section>

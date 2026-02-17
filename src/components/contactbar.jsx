@@ -12,7 +12,7 @@ export default function Contact() {
                         border-1 border-gray-700
                         bottom-8 z-50 
                         fixed flex justify-center
-                        
+                        shadow-lg/50 shadow-black
                         "
     >
       <div

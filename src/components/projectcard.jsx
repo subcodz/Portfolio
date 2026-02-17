@@ -22,7 +22,8 @@ export default function ProjectCard({
       <div
         className="
           rounded-[22px]  
-          border-red-700 
+          border-gray-700 
+          inset-shadow-md inset-shadow-gray-700/70
         bg-black/50
           border-1
           sm:border-2 
@@ -31,17 +32,16 @@ export default function ProjectCard({
           h-80 
           p-6 
           flex 
-          
+          hover:border-red-700
           flex-col 
-          shadow-md
           items-start
-          hover:-translate-y-5 hover:shadow-2xl/80 hover:shadow-red-600 transition-all duration-200
+          hover:-translate-y-5 hover:shadow-2xl/70 hover:shadow-red-700 transition-all duration-200
           "
       >
         <h2 className="text-gray-300 font-wide text-[18px] pt-[-10px] ">
           {heading}
         </h2>
-        <p className="text-gray-400 select-none font-parafont text-2xl leading-[18px] pt-7">
+        <p className="text-white/65 select-none font-donglelight text-2xl leading-[18px] pt-7">
           {description}
         </p>
         <p className="text-gray-400 select-none font-parafont text-[21px] absolute bottom-8">

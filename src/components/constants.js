@@ -1,5 +1,3 @@
-import gitIcon from "../assets/git.svg";
-import linkedinIcon from "../assets/linkedin.svg";
 
 export const Nav_links = [
     {target: "home", label: "HOME"},
@@ -9,31 +7,29 @@ export const Nav_links = [
 ]
 
 export const projectdata = [
-    { title: "Portfolio", state:"ongoing", heading:"Heading1",techstack: "React, Tailwind, GSAP", description: "This is the portfolio website, where I showcase my skills, project, my interests, on going plans and projects. I built this also to learn some frontend skills and to get started with projects." },
+    { title: "Portfolio", state:"ongoing", heading:"Heading1",techstack: "React, Tailwind", description: "This is the portfolio website, where I showcase my skills, project, my interests, on going plans and projects. I built this also to learn some frontend skills and to get started with projects." },
     { title: "Finax", state:"not-started", heading:"Heading1",techstack: "", description: "An AI assisted finance manager which just doesn't manages but also helps you with your personal wants and needs." },
     { title: "Edupal", state:"not-started", heading:"Heading1",techstack: "", description: "Notion but for the students, manage classes, exams, notes, to-dos', projects assignments for the whole course work with your AI buddy. Mention your side quests/career goals and you will be set up." },
     
 ]
 
 export const icons = [
-    { name: "Reactjs", label:"frontend"},
-    { name: "Python", label:"language"},
-    { name: "Git", label:"language"},
-    { name: "Javascript", label:"language"},
-    { name: "Nextjs", label:"frontend" },
-    { name: "C++", label:"language" },
-    { name: "springboot", label:"backend" },
-    { name: "Tailwind", label:"frontend" },
-    { name: "Java", label: "language"},
-    { name: "Nodejs", label: "backend"},
-    { name: "SQL", label: "language"},
-    { name: "PostgreSQL", label:"backend" }
+    { name: "Reactjs", label:"frontend", imgsrc: "https://cdn.simpleicons.org/react"},
+    { name: "Python", label:"language", imgsrc: "https://cdn.simpleicons.org/python"},
+    { name: "Git", label:"language", imgsrc: "https://cdn.simpleicons.org/git"},
+    { name: "Javascript", label:"language", imgsrc: "https://cdn.simpleicons.org/javascript"},
+    { name: "Nextjs", label:"frontend", imgsrc: "https://cdn.simpleicons.org/Next.js" },
+    { name: "C++", label:"language", imgsrc: "https://cdn.simpleicons.org/c++" },
+    { name: "Tailwind", label:"frontend", imgsrc: "https://cdn.simpleicons.org/tailwindcss" },
+    { name: "Nodejs", label: "backend", imgsrc: "https://cdn.simpleicons.org/Node.js"},
+    { name: "SQL", label: "language", imgsrc: "https://cdn.simpleicons.org/mysql"},
+    { name: "PostgreSQL", label:"backend", imgsrc: "https://cdn.simpleicons.org/postgresql" }
 ];
 
 export const social = [
-        { name: "linkedin", icon: linkedinIcon, link:"https://linkedin.com/in/subhajit-baidya-30a5a1363"},
-        { name: "github", icon: gitIcon, link:"https://github.com/subcodz"},
-        { name: "mail", icon: gitIcon, link:"mailto:subs88badd@gmail.com"},
+        { name: "linkedin", icon: "https://fontawesome.com/icons/square-linkedin?f=brands&s=solid", link:"https://linkedin.com/in/subhajit-baidya-30a5a1363"},
+        { name: "github", icon: "https://fontawesome.com/icons/github?f=brands&s=solid", link:"https://github.com/subcodz"},
+        { name: "mail", icon: "https://fontawesome.com/icons/envelope?f=classic&s=solid", link:"mailto:subs88badd@gmail.com"},
         
 ];
 
@@ -57,5 +53,6 @@ export const others = [
     {name: "System design"},
     {name: "HLD"},
     {name: "LLD"},
-    {name: "Architecture"}
+    {name: "Data Structures"},
+    {name: "Algorithms"}
 ];

@@ -39,14 +39,19 @@ export default function Timeline() {
   }, [activeIndex]);
 
   return (
-    <div className="p-5 sm:border-2 bg-black/50 backdrop-blur-sm z-0 rounded-[25px] border-1 border-red-700">
+    <div
+      className="p-5 backdrop-blur-sm bg-black/50  z-0 rounded-[25px] 
+                            inset-shadow-md w-100 justify-center
+                            inset-shadow-blue-700/30
+                            border-t-1 border-gray-500"
+    >
       <h1 className="font-wide text-white text-2xl">TIMELINE</h1>
 
       <div className="pt-5 relative" ref={containerRef}>
         {/* Vertical line */}
         {lineHeight > 0 && (
           <div
-            className="absolute mt-5 w-[2px] bg-gradient-to-b from-red-700 to-blue-800 
+            className="absolute mt-5 w-[2px] bg-red-700 opacity-55
                       rounded-[25px] transition-all duration-300"
             style={{
               height: `${lineHeight}px`,
@@ -72,8 +77,8 @@ export default function Timeline() {
 
               {/* Content */}
               <div className="flex flex-col">
-                <div className="border-1 rounded-[12px] border-gray-600 p-2 hover:border-gray-400">
-                  <h1 className="text-gray-300 font-parafont text-[24px] cursor-pointer">
+                <div className="border-b-1 rounded-[12px] border-gray-600 p-2 hover:border-gray-400">
+                  <h1 className="text-gray-300 font-donglelight text-[24px] cursor-pointer">
                     {item.title}
                   </h1>
                 </div>
