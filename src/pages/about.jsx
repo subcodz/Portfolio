@@ -1,5 +1,3 @@
-import { useGSAP } from "@gsap/react";
-import { useRef, useState } from "react";
 import Skills from "../components/skills";
 import Timeline from "../components/timeline";
 import { others } from "../components/constants";
@@ -8,13 +6,14 @@ export default function About() {
   return (
     <div className="px-5">
       <div className="gap-5 flex select-none justify-center ">
-        <div className="lg:grid lg:grid-cols-[0.51fr_0.5fr] sm:grid-cols-2 grid grid-cols-1 items-start gap-4 w-86 sm:w-fit">
+        <div className="lg:grid lg:grid-cols-[0.5fr_0.5fr] sm:grid-cols-2 grid grid-cols-1 items-start gap-4 w-86 sm:w-fit">
           <div className="grid sm:auto-rows-auto gap-4">
             <div
               className="
+                       
                         px-6 flex flex-col
                         backdrop-blur-sm bg-red-700/25
-                        z-0 
+                        z-0
                         hover:scale-102
                         transition-all duration-200
                         p-5
@@ -43,6 +42,7 @@ export default function About() {
             </div>
             <div
               className="
+                        max-w-4xl w-full mx-auto
                         hover:scale-102 transition-all duration-200
                         backdrop-blur-sm bg-black/50 
                         p-5

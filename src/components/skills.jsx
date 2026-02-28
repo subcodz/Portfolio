@@ -8,6 +8,7 @@ export default function Skills() {
     { title: "Frontend", label: "frontend" },
     { title: "Backend", label: "backend" },
     { title: "Languages", label: "language" },
+    { title: "Databases", label: "database" },
   ];
 
   return (
@@ -17,13 +18,15 @@ export default function Skills() {
         bg-black/25 backdrop-blur-3xl
         rounded-[25px]
         border-1 border-gray-600
-        
+        max-w-4xl w-full mx-auto
+        hover:scale-102
+        transition-all duration-200
       "
     >
       <h1 className="text-white font-wide text-[24px] mb-4">SKILLS</h1>
 
       {/* Category Buttons */}
-      <div className="flex gap-1 mb-6">
+      <div className="flex flex-wrap gap-1 mb-6">
         {categories.map((cat) => {
           const isActive = activeCategory === cat.label;
 

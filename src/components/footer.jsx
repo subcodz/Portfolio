@@ -7,7 +7,7 @@ export default function Footer() {
         flex flex-col
         select-none 
         backdrop-blur-[20px] bg-black/50 
-        h-60
+        h-60 mt-15
         sm:h-110"
     >
       <p

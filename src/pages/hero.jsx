@@ -41,13 +41,11 @@ export default function Hero() {
           ))}
         </h1>
 
-        <p className="font-donglelight hidden sm:flex text-gray-300 text-center text-[25px] leading-4 sm:text-[22px] w-[700px] px-8 select-none">
-          Hi, I'm Subhajit, a BTech CSE undergrad (engineering), love for
-          technology and the process of developing and exploring has always been
-          exciting to me. Apart from building tech projects to solve real world
-          problems I also do some graphic designing/poster making, have a huge
-          amount of love for music. Given below are some of my tech skills and
-          how I have used them in various projects.
+        <p className="font-donglelight sm:px-0 px-8 text-gray-300 text-center text-[23px] leading-4 sm:text-[22px] sm:w-[700px] select-none">
+          A backend enthusiast with special interest in system design: building
+          scalable and efficient systems, coming from wondering how things work.
+          Currently exploring and learning technologies to build something that
+          solves real world problems.
         </p>
       </div>
     </section>

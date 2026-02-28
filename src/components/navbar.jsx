@@ -33,7 +33,7 @@ function Navbar() {
           className="
                 
                 text-gray-300 
-                font-floripa text-xl 
+                font-wide text-xl
                  
                 transition duration-300
                 hover:text-red-500 select-none "

@@ -3,7 +3,7 @@ export const Nav_links = [
     {target: "home", label: "HOME"},
     {target: "about", label: "ABOUT"},
     {target: "projects", label: "PROJECTS"},
-    {target: "contacts", label: "CONTACTS"}
+    {target: "learn", label: "LEARN"}
 ]
 
 export const projectdata = [
@@ -18,18 +18,20 @@ export const icons = [
     { name: "Python", label:"language", imgsrc: "https://cdn.simpleicons.org/python"},
     { name: "Git", label:"language", imgsrc: "https://cdn.simpleicons.org/git"},
     { name: "Javascript", label:"language", imgsrc: "https://cdn.simpleicons.org/javascript"},
-    { name: "Nextjs", label:"frontend", imgsrc: "https://cdn.simpleicons.org/Next.js" },
     { name: "C++", label:"language", imgsrc: "https://cdn.simpleicons.org/c++" },
     { name: "Tailwind", label:"frontend", imgsrc: "https://cdn.simpleicons.org/tailwindcss" },
     { name: "Nodejs", label: "backend", imgsrc: "https://cdn.simpleicons.org/Node.js"},
-    { name: "SQL", label: "language", imgsrc: "https://cdn.simpleicons.org/mysql"},
-    { name: "PostgreSQL", label:"backend", imgsrc: "https://cdn.simpleicons.org/postgresql" }
+    { name: "SQL", label: "database", imgsrc: "https://cdn.simpleicons.org/mysql"},
+    { name: "PostgreSQL", label:"database", imgsrc: "https://cdn.simpleicons.org/postgresql" },
+    { name: "Java", label:"language", imgsrc: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"},
+    
+    
 ];
 
 export const social = [
-        { name: "linkedin", icon: "https://fontawesome.com/icons/square-linkedin?f=brands&s=solid", link:"https://linkedin.com/in/subhajit-baidya-30a5a1363"},
-        { name: "github", icon: "https://fontawesome.com/icons/github?f=brands&s=solid", link:"https://github.com/subcodz"},
-        { name: "mail", icon: "https://fontawesome.com/icons/envelope?f=classic&s=solid", link:"mailto:subs88badd@gmail.com"},
+        { name: "linkedin", icon: "https://www.svgrepo.com/show/303266/linkedin.svg", link:"https://linkedin.com/in/subhajit-baidya-30a5a1363"},
+        { name: "github", icon: "https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg", link:"https://github.com/subcodz"},
+        { name: "mail", icon: "https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg", link:"mailto:subs88badd@gmail.com"},
         
 ];
 
@@ -51,8 +53,16 @@ export const milestones = [
 
 export const others = [
     {name: "System design"},
-    {name: "HLD"},
     {name: "LLD"},
     {name: "Data Structures"},
-    {name: "Algorithms"}
+    {name: "Algorithms"},
+    {name: "OOP"},
+    
 ];
+
+export const learndata = [
+    { title: "OOP concepts", heading:"Heading1", description: "Concepts of Polymorphism, Inheritance, Abstraction and Encapsulation in Java in a simplified manner using code."},
+    { title: "LLD", heading:"Heading1", description: "Design patterns, design principles, UML diagrams, SOLID principles, how to write clean, production level code"},
+    { title: "HLD", heading:"Heading1", description: "Concepts of Polymorphism, Inheritance, Abstraction and Encapsulation in Java in a simplified manner using code."},
+    
+]
