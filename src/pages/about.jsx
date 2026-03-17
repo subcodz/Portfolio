@@ -1,15 +1,21 @@
 import Skills from "../components/skills";
 import Timeline from "../components/timeline";
 import { others } from "../components/constants";
+import useFadeInOnScroll from "../useFadeInOnScroll";
 
 export default function About() {
+  const aboutCardRef = useFadeInOnScroll();
+  const othersCardRef = useFadeInOnScroll();
+  const skillsRef = useFadeInOnScroll();
+
   return (
-    <div className="px-5">
+    <div className="px-5 pb-20">
       <div className="gap-5 flex select-none justify-center ">
         <div className="lg:grid lg:grid-cols-[0.5fr_0.5fr] sm:grid-cols-2 grid grid-cols-1 items-start gap-4 w-86 sm:w-fit">
           <div className="grid sm:auto-rows-auto gap-4">
             <div
-              className="
+              ref={aboutCardRef}
+              className="fade-in-hidden
                        
                         px-6 flex flex-col
                         backdrop-blur-sm bg-red-700/25
@@ -23,7 +29,7 @@ export default function About() {
                         ring-1 ring-gray-600
                         "
             >
-              <h1 className="text-white text-[24px] font-wide items-start">
+              <h1 className="text-gray-300 text-[24px] font-wide items-start">
                 ABOUT ME
               </h1>
               <p
@@ -41,7 +47,8 @@ export default function About() {
               </p>
             </div>
             <div
-              className="
+              ref={othersCardRef}
+              className="fade-in-hidden
                         max-w-4xl w-full mx-auto
                         hover:scale-102 transition-all duration-200
                         backdrop-blur-sm bg-black/50 
@@ -52,7 +59,7 @@ export default function About() {
                         border-1 border-gray-500
                       "
             >
-              <h1 className="text-2xl font-wide pb-5 text-white">others</h1>
+              <h1 className="text-2xl font-wide pb-5 text-gray-300">others</h1>
 
               <div className="flex flex-wrap gap-1 ">
                 {others.map((item) => (
@@ -81,7 +88,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="sm:my-0 my-3">
+          <div ref={skillsRef} className="fade-in-hidden sm:my-0 my-3">
             <Skills />
           </div>
         </div>

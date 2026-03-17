@@ -1,4 +1,9 @@
+import useFadeInOnScroll from "../useFadeInOnScroll";
+
 export default function Footer() {
+  const textRef = useFadeInOnScroll();
+  const headingRef = useFadeInOnScroll();
+
   return (
     <div
       className="w-full 
@@ -11,7 +16,8 @@ export default function Footer() {
         sm:h-110"
     >
       <p
-        className="font-parafont 
+        ref={textRef}
+        className="fade-in-hidden font-parafont 
             text-[20px] sm:text-2xl 
             flex justify-center 
             sm:pt-9 pt-5
@@ -20,7 +26,8 @@ export default function Footer() {
         website built and designed by
       </p>
       <h1
-        className="text-[110px] sm:text-[310px] 
+        ref={headingRef}
+        className="fade-in-hidden text-[110px] sm:text-[310px] 
             font-hidrom
             flex justify-center 
             leading-none 

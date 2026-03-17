@@ -38,18 +38,14 @@ function App() {
           >
             <About />
           </section>
-          <div className="flex items-center justify-center">
-            <div className="h-[1px] w-[1500px] my-15 bg-gradient-to-r from-transparent via-gray-700 via-50% to-transparent" />
-          </div>
+
           <section
             id="projects"
             className="panel panel-projects items-center flex justify-center "
           >
             <Projects />
           </section>
-          <div className="flex items-center justify-center">
-            <div className="h-[1px] w-[1500px] bg-gradient-to-r my-15 from-transparent via-gray-700 via-50% to-transparent" />
-          </div>
+
           <section id="learn">
             <Learn />
           </section>

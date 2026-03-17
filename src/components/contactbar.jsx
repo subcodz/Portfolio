@@ -1,8 +1,12 @@
 import { social } from "./constants";
+import useFadeInOnScroll from "../useFadeInOnScroll";
 
 export default function Contact() {
+  const linksRef = useFadeInOnScroll();
+
   return (
     <div
+      id="contactbar"
       className="p-1 px-5 
                         backdrop-blur-[15px] 
                         left-1/2 
@@ -13,10 +17,12 @@ export default function Contact() {
                         bottom-8 z-50 
                         fixed flex justify-center
                         shadow-lg/50 shadow-black
+                        hover:border-red-600 transition-all duration-300
                         "
     >
       <div
-        className="text-[22px] font-parafont
+        ref={linksRef}
+        className="fade-in-hidden text-[22px] font-parafont
                   gap-5 flex 
                   justify center 
                 text-gray-300 "

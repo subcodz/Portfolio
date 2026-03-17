@@ -1,12 +1,42 @@
 import { Nav_links } from "./constants";
 import { Link } from "react-router-dom";
+import useFadeInOnScroll from "../useFadeInOnScroll";
 
 function Navbar() {
+  const logoRef = useFadeInOnScroll();
+  const linksRef = useFadeInOnScroll();
+
+  const handleContactsClick = () => {
+    const contactbar = document.getElementById("contactbar");
+    if (contactbar) {
+      // First blink
+      contactbar.style.borderColor = "rgb(230, 23, 23)";
+      contactbar.style.borderWidth = "3px";
+      contactbar.style.boxShadow = "0 0 20px rgb(230, 23, 23)";
+      setTimeout(() => {
+        contactbar.style.borderColor = "rgb(55, 65, 81)";
+        contactbar.style.borderWidth = "1px";
+        contactbar.style.boxShadow = "";
+      }, 300);
+
+      // Second blink
+      setTimeout(() => {
+        contactbar.style.borderColor = "rgb(230, 23, 23)";
+        contactbar.style.borderWidth = "3px";
+        contactbar.style.boxShadow = "0 0 20px rgb(230, 23, 23)";
+      }, 600);
+      setTimeout(() => {
+        contactbar.style.borderColor = "rgb(55, 65, 81)";
+        contactbar.style.borderWidth = "1px";
+        contactbar.style.boxShadow = "";
+      }, 900);
+    }
+  };
+
   return (
     <nav
       className=" 
         backdrop-blur-[20px] 
-        
         flex justify-center
         z-50 
         border-1
@@ -30,7 +60,8 @@ function Navbar() {
             "
       >
         <h2
-          className="
+          ref={logoRef}
+          className="fade-in-hidden
                 
                 text-gray-300 
                 font-wide text-xl
@@ -42,11 +73,13 @@ function Navbar() {
         </h2>
 
         <div
-          className="
+          ref={linksRef}
+          className="fade-in-hidden
                 hidden 
-                lg:flex gap-5
+                lg:flex gap-4
                 sm:text-lg 
                 md:text-1xl 
+                justify-center
                 font-medium 
                 mt-1
                 font-parafont 
@@ -65,10 +98,9 @@ function Navbar() {
                          duration-250
                          text-1xl
                          select-none
-                         hover:text-2xl
+                         hover:text-xl
                          hover:font-wide
                          hover:scale-75
-                         
                          hover:text-black
                          hover:bg-white hover:rounded-[25px] hover:px-3
                          "
@@ -76,6 +108,21 @@ function Navbar() {
               {link.label}
             </button>
           ))}
+          <button
+            onClick={handleContactsClick}
+            className="transition-all
+                       duration-250
+                       text-1xl
+                       select-none
+                       hover:text-xl
+                       hover:font-wide
+                       hover:scale-75
+                       hover:text-black
+                       hover:bg-white hover:rounded-[25px] hover:px-3
+                       "
+          >
+            CONTACTS
+          </button>
         </div>
       </div>
     </nav>

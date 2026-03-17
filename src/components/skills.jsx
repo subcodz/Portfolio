@@ -23,7 +23,7 @@ export default function Skills() {
         transition-all duration-200
       "
     >
-      <h1 className="text-white font-wide text-[24px] mb-4">SKILLS</h1>
+      <h1 className="text-gray-300 font-wide text-[24px] mb-4">SKILLS</h1>
 
       {/* Category Buttons */}
       <div className="flex flex-wrap gap-1 mb-6">
