@@ -16,8 +16,8 @@ export default function Skills() {
       className="
         p-5 flex flex-col
         bg-black/25 backdrop-blur-3xl
-        rounded-[25px]
-        border-1 border-gray-600
+        rounded-[15px]
+        border-1 border-gray-700
         max-w-4xl w-full mx-auto
         hover:scale-102
         transition-all duration-200
@@ -35,12 +35,12 @@ export default function Skills() {
               key={cat.label}
               onClick={() => setActiveCategory(isActive ? null : cat.label)}
               className={`
-                text-[22px] font-parafont px-3  rounded-full border
+                text-[20px] font-donglelight px-3 rounded-full border
                 transition-all duration-200
                 ${
                   isActive
                     ? "bg-white text-black border-white"
-                    : "text-white border-gray-600 hover:text-black hover:bg-white"
+                    : "text-gray-300 border-gray-600 hover:text-black hover:bg-white"
                 }
               `}
             >
@@ -67,11 +67,11 @@ export default function Skills() {
                 font-donglelight text-[20px]
                 transition-all duration-200
                 hover:-translate-y-1
-                hover:shadow-lg/40 hover:shadow-yellow-300
+                hover:shadow-lg/40 hover:shadow-gray-300
                 ${
                   isActive
-                    ? "bg-white text-black font-parafont border-white  "
-                    : "bg-gray-800 text-white border-gray-700 hover:bg-white hover:text-black hover:font-parafont"
+                    ? "bg-white text-black border-white shadow-lg/20 shadow-gray-300 font-parafont"
+                    : "bg-gray-800 text-gray-300 border-gray-700 hover:bg-white hover:text-black hover:font-parafont "
                 }
               `}
             >

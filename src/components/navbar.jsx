@@ -39,19 +39,20 @@ function Navbar() {
         backdrop-blur-[20px] 
         flex justify-center
         z-50 
+        shadow-lg/50 shadow-black
         border-1
         border-gray-700 
         bg-black/15 
         px-15 py-2 
-        rounded-[30px] 
+        rounded-[10px] 
          fixed
         left-1/2 -translate-x-1/2
         top-5 "
     >
       <div
-        className="flex items-center 
+        className="flex items-center justify-center
           gap-35               
-          text-gray-300 
+          text-gray-400 
           font-mono 
           
           /* Smooth scaling on all breakpoints */
@@ -76,13 +77,13 @@ function Navbar() {
           ref={linksRef}
           className="fade-in-hidden
                 hidden 
-                lg:flex gap-4
-                sm:text-lg 
-                md:text-1xl 
-                justify-center
+                gap-4
+                sm:text-[10px] 
+                sm:justify-center
+                sm:flex
                 font-medium 
-                mt-1
-                font-parafont 
+                
+                font-jetmonothick
                 "
         >
           {Nav_links.map((link) => (
@@ -96,13 +97,11 @@ function Navbar() {
               }}
               className="transition-all
                          duration-250
-                         text-1xl
-                         select-none
-                         hover:text-xl
-                         hover:font-wide
-                         hover:scale-75
+                         text-[10px]
+                         font-jetmonothick
+                         select-none hover:px-2
                          hover:text-black
-                         hover:bg-white hover:rounded-[25px] hover:px-3
+                         hover:bg-white hover:rounded-[5px]
                          "
             >
               {link.label}
@@ -112,14 +111,11 @@ function Navbar() {
             onClick={handleContactsClick}
             className="transition-all
                        duration-250
-                       text-1xl
+                       text-[10px]
                        select-none
-                       hover:text-xl
-                       hover:font-wide
-                       hover:scale-75
-                       hover:text-black
-                       hover:bg-white hover:rounded-[25px] hover:px-3
-                       "
+                      hover:px-2
+                         hover:text-black
+                         hover:bg-white hover:rounded-[5px]"
           >
             CONTACTS
           </button>

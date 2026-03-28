@@ -16,7 +16,7 @@ function App() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover brightness-60"
+          className="w-full h-full object-cover brightness-30"
         >
           <source src="/bg.mp4" type="video/mp4" />
         </video>

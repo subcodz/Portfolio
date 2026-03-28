@@ -21,13 +21,13 @@ export default function Footer() {
             text-[20px] sm:text-2xl 
             flex justify-center 
             sm:pt-9 pt-5
-            text-gray-300"
+            text-gray-400"
       >
         website built and designed by
       </p>
       <h1
         ref={headingRef}
-        className="fade-in-hidden text-[110px] sm:text-[310px] 
+        className="fade-in-hidden text-[110px] sm:text-[300px] 
             font-hidrom
             flex justify-center 
             leading-none 

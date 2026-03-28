@@ -15,7 +15,9 @@
   --font-donglelight: "donglelight", sans-serif;
   --font-skybold: "skybold", sans-serif;
   --font-grotesque: "grotesque", sans-serif;
-  --font-ibmono: "ibmono", sans-serif;
+  --font-jetmono: "jetmono", sans-serif;
+  --font-jetmonothick: "jetmonothick", sans-serif;
+  --font-poppins: "poppins", sans-serif;
 }
 
 /* Set global site background */
@@ -74,7 +76,8 @@ body {
 @font-face {
   font-family: 'donglelight';
   src: url('../src/assets/fonts/Dongle-Light.ttf') format('truetype');
-  
+  font-weight: 100;
+  font-style: normal;
 }
 @font-face {
   font-family: 'grotesque';
@@ -83,11 +86,22 @@ body {
   font-style: normal;
 }
 @font-face {
-  font-family: 'ibmono';
-  src: url('../src/assets/fonts/IBMono.ttf') format('truetype');
+  font-family: 'jetmono';
+  src: url('../src/assets/fonts/JetBrainsMono-Light.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
-  
+}
+@font-face {
+  font-family: 'jetmonothick';
+  src: url('../src/assets/fonts/JetBrainsMono.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'poppins';
+  src: url('../src/assets/fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
 }
 @font-face {
   font-family: 'skybold';

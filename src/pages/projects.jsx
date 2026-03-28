@@ -8,7 +8,7 @@ export default function Projects() {
   const cardsRef = useFadeInOnScroll();
 
   return (
-    <div className="flex flex-col items-center sm:items-start  py-10 px-5">
+    <div className="flex flex-col items-center sm:items-start py-10 ">
       <h1
         ref={headingRef}
         className="fade-in-hidden text-gray-300 text-[28px] sm:text-3xl  font-wide "
@@ -17,7 +17,7 @@ export default function Projects() {
       </h1>
       <p
         ref={paraRef}
-        className="fade-in-hidden pt-1 pb-7 text-gray-400 text-[23px] sm:px-0 px-8 font-donglelight sm:leading-5 leading-4"
+        className="fade-in-hidden pb-7 text-gray-400 text-[12px] sm:px-0 px-8 font-jetmono sm:leading-5 leading-4"
       >
         I try finding real world problems or things that can be made better in a
         different way and build them.

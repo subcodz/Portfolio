@@ -29,9 +29,9 @@ export const icons = [
 ];
 
 export const social = [
-        { name: "linkedin", icon: "https://www.svgrepo.com/show/303266/linkedin.svg", link:"https://linkedin.com/in/subhajit-baidya-30a5a1363"},
-        { name: "github", icon: "https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg", link:"https://github.com/subcodz"},
-        { name: "mail", icon: "https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg", link:"mailto:subs88badd@gmail.com"},
+        { name: "LINKEDIN", icon: "https://www.svgrepo.com/show/303266/linkedin.svg", link:"https://linkedin.com/in/subhajit-baidya-30a5a1363"},
+        { name: "GITHUB", icon: "https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg", link:"https://github.com/subcodz"},
+        { name: "MAIL", icon: "https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg", link:"mailto:subs88badd@gmail.com"},
         
 ];
 

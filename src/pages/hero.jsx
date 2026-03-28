@@ -43,7 +43,7 @@ export default function Hero() {
           ))}
         </h1>
 
-        <p className="font-donglelight sm:px-0 px-8 text-gray-300 text-center text-[23px] leading-4 sm:text-[22px] sm:w-[700px] select-none">
+        <p className="font-donglelight sm:px-0 px-8 text-gray-300 text-[23px] leading-4 sm:text-[22px] sm:w-[700px] select-none">
           A backend enthusiast with special interest in system design: building
           scalable and efficient systems, coming from wondering how things work.
           Currently exploring and learning technologies to build something that
