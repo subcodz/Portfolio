@@ -7,7 +7,7 @@ export const Nav_links = [
 ]
 
 export const projectdata = [
-    { title: "Portfolio", state:"ongoing", heading:"Heading1",techstack: "React, Tailwind", description: "This is the portfolio website, where I showcase my skills, project, my interests, on going plans and projects. I built this also to learn some frontend skills and to get started with projects." },
+    { title: "MiniJira", state:"ongoing", heading:"Heading1",techstack: "NextJs, Fastify, Supabase, Redis", description: "A lightweight app to manage, track, plan all your projects with all your people with advanced features of real time collaboration." },
     { title: "Finax", state:"not-started", heading:"Heading1",techstack: "", description: "An AI assisted finance manager which just doesn't manages but also helps you with your personal wants and needs." },
     { title: "Edupal", state:"not-started", heading:"Heading1",techstack: "", description: "Notion but for the students, manage classes, exams, notes, to-dos', projects assignments for the whole course work with your AI buddy. Mention your side quests/career goals and you will be set up." },
     
@@ -15,6 +15,7 @@ export const projectdata = [
 
 export const icons = [
     { name: "Reactjs", label:"frontend", imgsrc: "https://cdn.simpleicons.org/react"},
+    { name: "Nextjs", label:"fullstack", imgsrc: "https://cdn.simpleicons.org/next.js"},
     { name: "Python", label:"language", imgsrc: "https://cdn.simpleicons.org/python"},
     { name: "Git", label:"language", imgsrc: "https://cdn.simpleicons.org/git"},
     { name: "Javascript", label:"language", imgsrc: "https://cdn.simpleicons.org/javascript"},
@@ -24,7 +25,7 @@ export const icons = [
     { name: "SQL", label: "database", imgsrc: "https://cdn.simpleicons.org/mysql"},
     { name: "PostgreSQL", label:"database", imgsrc: "https://cdn.simpleicons.org/postgresql" },
     { name: "Java", label:"language", imgsrc: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"},
-    
+    { name: "Supabase", label:"database", imgsrc: "https://cdn.simpleicons.org/supabase" },
     
 ];
 

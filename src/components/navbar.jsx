@@ -39,7 +39,7 @@ function Navbar() {
         backdrop-blur-[20px] 
         flex justify-center
         z-50 
-        shadow-lg/50 shadow-black
+        shadow-lg/40 shadow-black
         border-1
         border-gray-700 
         bg-black/15 
@@ -52,7 +52,7 @@ function Navbar() {
       <div
         className="flex items-center justify-center
           gap-35               
-          text-gray-400 
+          text-gray-300 
           font-mono 
           
           /* Smooth scaling on all breakpoints */
@@ -66,7 +66,7 @@ function Navbar() {
                 
                 text-gray-300 
                 font-wide text-xl
-                 
+                 sm:hidden flex
                 transition duration-300
                 hover:text-red-500 select-none "
         >
@@ -78,7 +78,7 @@ function Navbar() {
           className="fade-in-hidden
                 hidden 
                 gap-4
-                sm:text-[10px] 
+                sm:text-[11px] 
                 sm:justify-center
                 sm:flex
                 font-medium 

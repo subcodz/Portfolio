@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className="px-5 pb-20">
       <div className="gap-5 flex select-none justify-center ">
-        <div className="lg:grid lg:grid-cols-[0.5fr_0.5fr] sm:grid-cols-2 grid grid-cols-1 items-start gap-4 w-86 sm:w-fit">
+        <div className="lg:grid lg:grid-cols-[0.5fr_0.47fr] sm:grid-cols-2 grid grid-cols-1 items-start gap-4 w-86 sm:w-fit">
           <div className="grid sm:auto-rows-auto gap-4">
             <div
               ref={aboutCardRef}

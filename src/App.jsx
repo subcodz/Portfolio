@@ -16,7 +16,7 @@ function App() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover brightness-30"
+          className="w-full h-full object-cover brightness-50"
         >
           <source src="/bg.mp4" type="video/mp4" />
         </video>
@@ -28,7 +28,7 @@ function App() {
         <Navbar />
 
         <main className="main-content">
-          <section id="home" className="pt-20">
+          <section id="home" className="pt-14">
             <Hero />
           </section>
 

@@ -35,7 +35,7 @@ export default function Footer() {
             brightness-80
             text-transparent
             bg-[url(/text_bg.jpg)]
-            sm:bg-top bg-left
+            bg-top
             bg-clip-text 
             "
       >

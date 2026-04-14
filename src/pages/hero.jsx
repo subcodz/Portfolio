@@ -20,7 +20,6 @@ export default function Hero() {
             font-hidrom
             text-gray-300
             select-none
-            opacity-60
             cursor-default
             text-[110px] sm:text-[150px]
             transition-all duration-300 ease-out

@@ -40,12 +40,12 @@ export default function ProjectCard({
         <p className="text-white/65 select-none font-donglelight text-[22px] leading-[15px] pt-7">
           {description}
         </p>
-        <p className="text-gray-400 select-none font-jetmono text-[11px] absolute bottom-10">
+        <p className="text-gray-400 select-none font-jetmono text-[11px] absolute bottom-11">
           {techstack}
         </p>
         <div className="absolute bottom-3 left-0 w-full px-[23px] flex justify-between items-center">
           <div
-            className="text-gray-300 font-wide text-[13px] cursor-pointer p-1 px-2 
+            className="text-gray-300 font-wide text-[11px] cursor-pointer p-1 px-2 border-1 border-gray-700 rounded-[8px] hover:border-none
           transition-all duration-200 hover:ease-in-out rounded-[8px] hover:bg-white hover:text-black"
           >
             GITHUB

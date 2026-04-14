@@ -17,7 +17,7 @@ export default function Projects() {
       </h1>
       <p
         ref={paraRef}
-        className="fade-in-hidden pb-7 text-gray-400 text-[12px] sm:px-0 px-8 font-jetmono sm:leading-5 leading-4"
+        className="fade-in-hidden pt-2 pb-7 text-gray-400 text-[22px] sm:px-0 px-8 font-donglelight sm:leading-5 leading-4"
       >
         I try finding real world problems or things that can be made better in a
         different way and build them.

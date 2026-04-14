@@ -9,6 +9,7 @@ export default function Skills() {
     { title: "Backend", label: "backend" },
     { title: "Languages", label: "language" },
     { title: "Databases", label: "database" },
+    { title: "Fullstack", label: "fullstack" },
   ];
 
   return (
@@ -19,8 +20,7 @@ export default function Skills() {
         rounded-[15px]
         border-1 border-gray-700
         max-w-4xl w-full mx-auto
-        hover:scale-102
-        transition-all duration-200
+        
       "
     >
       <h1 className="text-gray-300 font-wide text-[24px] mb-4">SKILLS</h1>
